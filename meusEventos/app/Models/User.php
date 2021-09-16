@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
-{
+class User extends Authenticatable{
+    // protected $table = "usuarios"; // Caso sua tabela esteja em português e o model em inglês
     use HasFactory, Notifiable;
 
     /**

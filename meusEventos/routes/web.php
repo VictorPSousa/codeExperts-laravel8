@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/albuns', [\App\Http\Controllers\HelloWorldController::class, 'consumoDeAPI']);
 
 // function = callback
 Route::get('/hello-world', [\App\Http\Controllers\HelloWorldController::class, 'helloWorld']);
